@@ -1,0 +1,2 @@
+﻿Main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl smart_Array<int>::is_empty(void)" (?is_empty@?$smart_Array@H@@QEAA_NXZ) referenced in function main
+C:\Users\danie\source\repos\DataStructure_Library_C++\x64\Debug\DataStructure_Library_C++.exe : fatal error LNK1120: 1 unresolved externals
