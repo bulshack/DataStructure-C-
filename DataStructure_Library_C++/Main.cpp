@@ -2,23 +2,32 @@
 #include <vector>
 #include <string>
 #include"LinkedList.h" 
+#include <bitset>
 
 
-//pass by reference
-int Sum(int &numero)
-{
 
-	numero += 5;
-
-	return 0;
-}
+#define LOG(x) std::cout << x << std::endl;
 
 
 
 
 int main() 
 {
+	LinkedList<char> dude; 
+
 	
+
+	dude.insert_node('e');
+	dude.insert_node('e');
+	dude.insert_node('e');
+	dude.insert_node('e');
+	dude.insert_node('e');
+
+
+	dude.PrintInfo();
+	dude.DeleteLinkedList();
+
 	
+
 
 }
