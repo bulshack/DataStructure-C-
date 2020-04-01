@@ -13,21 +13,7 @@
 
 int main() 
 {
-	LinkedList<char> dude; 
-
-	
-
-	dude.insert_node('e');
-	dude.insert_node('e');
-	dude.insert_node('e');
-	dude.insert_node('e');
-	dude.insert_node('e');
-
-
-	dude.PrintInfo();
-	dude.DeleteLinkedList();
-
-	
+	LinkedList<int> numbers;
 
 
 }

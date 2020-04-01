@@ -1,6 +1,5 @@
 #pragma once
 
-
 template <typename K, typename V>
 class hashtable
 {
@@ -13,12 +12,8 @@ public:
 	hashtable(const K& key, const V& value) :
 		key(key), value(value), next(NULL)
 	{
-
 	}
 
-	
-
-	
 	K getKey() const
 	{
 		return key;
@@ -34,7 +29,7 @@ public:
 		hashtable::value = value;
 	}
 
-	hashtable *getNext() const
+	hashtable* getNext() const
 	{
 		return next;
 	}
@@ -43,7 +38,4 @@ public:
 	{
 		hashtable::next = next;
 	}
-
-
 };
-

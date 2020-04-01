@@ -136,6 +136,8 @@
     <ClInclude Include="Libraries.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Practice.h" />
+    <ClInclude Include="Queues.h" />
+    <ClInclude Include="Stacks.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

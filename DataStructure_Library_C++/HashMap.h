@@ -11,11 +11,10 @@ public:
 
 		table = new hashtable <K, V> * [TABLE_SIZE]();
 	}
-	 
-	
+
 	~HashMap()
 	{
-		//destroy all 
+		//destroy all
 
 		for (size_t i = 0; i < TABLE_SIZE; ++i)
 		{
@@ -33,12 +32,10 @@ public:
 		delete[] table;
 	}
 
-	
 	bool get(const K& key, V& value)
 	{
 		unsigned long hashValue = hashFunc(key, TABLE_SIZE);
 		hashtable<K, V>* entry = table[hashValue];
-
 
 		while (entry != NULL)
 		{
@@ -56,12 +53,11 @@ public:
 
 	void put(const K& key, const V& value)
 	{
-		 unsigned long hashValue = hashFunc(key, TABLE_SIZE);
+		unsigned long hashValue = hashFunc(key, TABLE_SIZE);
 
-		hashtable<K, V> *prev = NULL;
+		hashtable<K, V>* prev = NULL;
 
-		hashtable<K, V> *entry = table[hashValue];
-
+		hashtable<K, V>* entry = table[hashValue];
 
 		while (entry != NULL && entry->getKey() != key)
 		{
@@ -76,7 +72,6 @@ public:
 			if (prev == NULL)
 			{
 				table[hashValue] = entry;
-
 			}
 			else
 			{
@@ -95,7 +90,6 @@ public:
 		hashtable<K, V>* prev = NULL;
 		hashtable<K, V>* entry = table[hashValue];
 
-
 		while (entry != NULL && entry->getKey() != key)
 		{
 			prev = entry;
@@ -111,7 +105,6 @@ public:
 			if (prev == NULL)
 			{
 				table[hashValue] = entry->getNext();
-
 			}
 			else
 			{
@@ -121,10 +114,9 @@ public:
 		}
 	}
 
-	private:
-		//Hash Table
-		hashtable <K, V>** table;
-		F hashFunc;
-		int TABLE_SIZE;
-
+private:
+	//Hash Table
+	hashtable <K, V>** table;
+	F hashFunc;
+	int TABLE_SIZE;
 };

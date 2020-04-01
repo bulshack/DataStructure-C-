@@ -13,14 +13,11 @@ public:
 				{
 					return true;
 				}
-
 			}
 		}
 
 		return false;
 	}
-
-
 
 	std::vector<int> twoSumV(std::vector<int>& nums, int target)
 	{
@@ -34,15 +31,10 @@ public:
 					return temp;
 				}
 			}
-
-
 		}
 		return nums;
 	}
-
 };
-
-
 
 std::string reverseString(std::string word)
 {
@@ -59,15 +51,12 @@ std::string reverseString(std::string word)
 			break;
 	}
 
-
 	word = temp;
 	return word;
 }
 
-
 void printString(std::string word)
 {
-
 	for (size_t i = 0; i < word.size(); i++)
 	{
 		std::cout << word[i];
